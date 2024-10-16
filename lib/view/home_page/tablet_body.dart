@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsivedashboard/constants.dart';
-import '../util/my_box.dart';
-import '../util/my_tile.dart';
+import 'package:responsivedashboard/utils/utilities.dart';
+
+import '../../util/my_tile.dart';
 
 class TabletScaffold extends StatefulWidget {
   const TabletScaffold({Key? key}) : super(key: key);
@@ -27,11 +28,11 @@ class _TabletScaffoldState extends State<TabletScaffold> {
               child: SizedBox(
                 width: double.infinity,
                 child: GridView.builder(
-                  itemCount: 4,
+                  itemCount: Utilities.boxes.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 4),
+                      crossAxisCount: 6),
                   itemBuilder: (context, index) {
-                    return MyBox();
+                    return Utilities.boxes[index];
                   },
                 ),
               ),
@@ -42,7 +43,7 @@ class _TabletScaffoldState extends State<TabletScaffold> {
               child: ListView.builder(
                 itemCount: 6,
                 itemBuilder: (context, index) {
-                  return const MyTile();
+                  return Container();
                 },
               ),
             ),

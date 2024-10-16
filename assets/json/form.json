@@ -1,0 +1,870 @@
+[
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "Home",
+    "PageFields": [
+      {
+        "Title": "Home",
+        "Headers": "Welcome to Home",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      },
+      {
+        "Title": "Services",
+        "Headers": "Our Services",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab154"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "user/register",
+    "PageFields": [
+      {
+        "Title": "Name",
+        "Headers": "name",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      },
+      {
+        "Title": "User Id",
+        "Headers": "userId",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab154"
+      },
+      {
+        "Title": "Address",
+        "Headers": "address",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab154"
+      },
+      {
+        "Title": "Photo",
+        "Headers": "photo",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab154"
+      },
+      {
+        "Title": "Email Id",
+        "Headers": "emailId",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab154"
+      },
+      {
+        "Title": "Password",
+        "Headers": "password",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab154"
+      },
+      {
+        "Title": "Phone",
+        "Headers": "phone",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab154"
+      },
+      {
+        "Title": "Created At",
+        "Headers": "createdAt",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Updated At",
+        "Headers": "updatedAt",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Is Active",
+        "Headers": "isActive",
+        "Type": "radio",
+        "Options": ["true", "false"],
+        "_id": "66b230b6cc8539b4ed3861cd0"
+      },
+      {
+        "Title": "Project Mapped",
+        "Headers": "projectName",
+        "Type": "multiselect",
+        "_id": "66b34b204ecde7c5bfeab153",
+        "endpoint": "projects",
+        "key": "projectName"
+      },
+      {
+        "Title": "Role",
+        "Headers": "role",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cca",
+        "endpoint": "role",
+        "key": "roleName"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "permitstype",
+    "PageFields": [
+      {
+        "Title": "Permit Type",
+        "Headers": "permitsType",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      },
+      {
+        "Title": "Safety Checks",
+        "Headers": "SafetyChecks",
+        "Type": "editablechip",
+        "_id": "66b230b6cc8539b4ed3861cc9"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "topic",
+    "PageFields": [
+      {
+        "Title": "Type of Topic",
+        "Headers": "topicTypes",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "tools",
+    "PageFields": [
+      {
+        "Title": "Name of Tool",
+        "Headers": "tools",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "Projects",
+    "PageFields": [
+      {
+        "Title": "Project Id",
+        "Headers": "projectId",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      },
+      {
+        "Title": "Project Name",
+        "Headers": "projectName",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      },
+      {
+        "Title": "Site Location",
+        "Headers": "siteLocation",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      },
+      {
+        "Title": "Start Date",
+        "Headers": "startDate",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "End Date",
+        "Headers": "endDate",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Project Status",
+        "Headers": "status",
+        "Type": "simpledropdown",
+        "Options": [
+          "Planned",
+          "In Progress",
+          "On Hold",
+          "Completed",
+          "Under Review"
+        ],
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+      {
+        "Title": "Company",
+        "Headers": "company",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Project Description",
+        "Headers": "description",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "hazards",
+    "PageFields": [
+      {
+        "Title": "Type of Hazard",
+        "Headers": "hazards",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "ppe",
+    "PageFields": [
+      {
+        "Title": "Type of PPE",
+        "Headers": "ppes",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "role",
+    "PageFields": [
+      {
+        "Title": "Type of role",
+        "Headers": "roleName",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      },
+      {
+        "Title": "Role Description",
+        "Headers": "description",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      },
+      {
+        "Title": "Role Permissions",
+        "Headers": "permissions",
+        "Type": "simplemultiselect",
+        "_id": "66b34b204ecde7c5bfeab153",
+        "Options": ["Read", "Write", "Delete", "Moderate", "Manage", "Inspect","uauc","workpermit"]
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "riskRating",
+    "PageFields": [
+      {
+        "Title": "Risk Value",
+        "Headers": "value",
+        "Type": "simpledropdown",
+        "_id": "66b34b204ecde7c5bfeab153",
+        "Options": ["1", "2", "3", "4", "5", "6"]
+      },
+      {
+        "Title": "Severity",
+        "Headers": "severity",
+        "Type": "simpledropdown",
+        "_id": "66b34b204ecde7c5bfeab153",
+        "Options": ["Significant","Critical", "High", "Medium", "Low"]
+      },
+      {
+        "Title": "Alert Timeline",
+        "Headers": "alertTimeline",
+        "Type": "simpledropdown",
+        "_id": "66b34b204ecde7c5bfeab153",
+        "Options": ["Immediate","Hourly", "Daily", "Weekly", "Bi-Weekly","Monthly"]
+      },
+      {
+        "Title": "Repeat Warning",
+        "Headers": "repeatWarning",
+        "Type": "simpledropdown",
+        "_id": "66b34b204ecde7c5bfeab153",
+        "Options": ["Every 6 Hours","Every 12 Hours", "Every 18 Hours", "Every 12 Hours", "Every 7 Days","Every 14 Days"]
+      },
+      {
+        "Title": "Escalation Alert",
+        "Headers": "escalationAlert",
+        "Type": "multiselect",
+        "_id": "66b34b204ecde7c5bfeab153",
+        "endpoint": "role",
+        "key": "roleName"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab152",
+    "Page": "trade",
+    "PageFields": [
+      {
+        "Title": "Type of Trade",
+        "Headers": "tradeTypes",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab153"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34cd83190d84d50262c71",
+    "Page": "workpermit",
+    "PageFields": [
+      {
+        "Title": "Project Name",
+        "Headers": "projectName",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+        "endpoint": "projects",
+        "key": "projectName"
+      },
+      {
+        "Title": "Area",
+        "Headers": "area",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc2",
+        "endpoint": "projects",
+        "key": "siteLocation"
+      },
+      {
+        "Title": "Permit Types",
+        "Headers": "permitTypes",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc3",
+        "endpoint": "permitstype",
+        "key": "permitsType"
+      },
+      {
+        "Title": "Date",
+        "Headers": "date",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Time",
+        "Headers": "time",
+        "Type": "timepicker",
+        "_id": "66b230b6cc8539b4ed3861cc5"
+      },
+      {
+        "Title": "Tools and Equipment",
+        "Headers": "toolsAndEquipment",
+        "Type": "multiselect",
+        "_id": "66b230b6cc8539b4ed3861cc6",
+        "endpoint": "tools",
+        "key": "tools"
+      },
+      {
+        "Title": "Tools Tested",
+        "Headers": "toolsTested",
+        "Type": "radio",
+        "Options": ["Yes", "No", "N/A"],
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+      {
+        "Title": "Work Description",
+        "Headers": "workDescription",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+      {
+        "Title": "Type of Hazard",
+        "Headers": "typeOfHazard",
+        "Type": "multiselect",
+        "_id": "66b230b6cc8539b4ed3861cc8",
+        "endpoint": "hazards",
+        "key": "hazards"
+      },
+      {
+        "Title": "Applicable PPEs",
+        "Headers": "applicablePPEs",
+        "Type": "multiselect",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "endpoint": "ppe",
+        "key": "ppes"
+      },
+      {
+        "Title": "Safety Measures Taken",
+        "Headers": "safetyMeasuresTaken",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cca",
+        "endpoint": "PermitsType",
+        "key": "permitsType"
+      },
+      {
+        "Title": "Undersign Draft",
+        "Headers": "undersignDraft",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+      {
+        "Title": "Created By",
+        "Headers": "createdBy",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861ccc",
+        "endpoint": "user",
+        "key": "name"
+      },
+      {
+        "Title": "Verified By",
+        "Headers": "verifiedBy",
+        "Type": "multiselect",
+        "_id": "66b230b6cc8539b4ed3861ccd",
+        "endpoint": "user",
+        "key": "name"
+      },
+      {
+        "Title": "Approval By",
+        "Headers": "approvalBy",
+        "Type": "multiselect",
+        "_id": "66b230b6cc8539b4ed3861cce",
+        "endpoint": "user",
+        "key": "name"
+      },
+      {
+        "Title": "Verified Done",
+        "Headers": "verifiedDone",
+        "Type": "radio",
+        "Options": ["true", "false"],
+        "_id": "66b230b6cc8539b4ed3861ccf"
+      },
+      {
+        "Title": "Approval Done",
+        "Headers": "approvalDone",
+        "Type": "radio",
+        "Options": ["true", "false"],
+        "_id": "66b230b6cc8539b4ed3861cd0"
+      },
+      {
+        "Title": "Geo Tagging",
+        "Headers": "geotagging",
+        "Type": "geolocation",
+        "_id": "66b230b6cc8539b4ed3861cc1"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34cd83190d84d50262c71",
+    "Page": "meeting",
+    "PageFields": [
+      {
+        "Title": "Project Name",
+        "Headers": "projectName",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+        "endpoint": "projects",
+        "key": "projectName"
+      },
+
+      {
+        "Title": "Date",
+        "Headers": "date",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Time",
+        "Headers": "time",
+        "Type": "timepicker",
+        "_id": "66b230b6cc8539b4ed3861cc5"
+      },
+
+      {
+        "Title": "Topic Name",
+        "Headers": "topicName",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+
+      {
+        "Title": "Form Filled Sign By",
+        "Headers": "formFilledSignBy",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "endpoint": "user",
+        "key": "name"
+      },
+      {
+        "Title": "Attendees",
+        "Headers": "attendees",
+        "Type": "editablechip",
+        "_id": "66b230b6cc8539b4ed3861cc9"
+      },
+      {
+        "Title": "Number of Attendees",
+        "Headers": "attendeesNos",
+        "Type": "slider",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "endpoint": "user",
+        "key": "name"
+      },
+      {
+        "Title": "Comments Box",
+        "Headers": "commentsBox",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+      {
+        "Title": "Documentation of Evidence Photo",
+        "Headers": "documentaryEvidencePhoto",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+      {
+        "Title": "Type of Topic",
+        "Headers": "typeOfTopic",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+        "endpoint": "topic",
+        "key": "topicTypes"
+      },
+      {
+        "Title": "Geo Tagging",
+        "Headers": "geotagging",
+        "Type": "geolocation",
+        "_id": "66b230b6cc8539b4ed3861cc1"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34cd83190d84d50262c71",
+    "Page": "induction",
+    "PageFields": [
+      {
+        "Title": "Project Name",
+        "Headers": "projectName",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+        "endpoint": "projects",
+        "key": "projectName"
+      },
+
+      {
+        "Title": "Date",
+        "Headers": "date",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Time",
+        "Headers": "time",
+        "Type": "timepicker",
+        "_id": "66b230b6cc8539b4ed3861cc5"
+      },
+
+      {
+        "Title": "Inductees",
+        "Headers": "inductees",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+
+      {
+        "Title": "Inductees Name",
+        "Headers": "inducteesName",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9"
+      },
+      {
+        "Title": "Sub-Contractor Name",
+        "Headers": "subContractorName",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9"
+      },
+      {
+        "Title": "Type of Topic",
+        "Headers": "typeOfTopic",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+        "endpoint": "topic",
+        "key": "topicTypes"
+      },
+      {
+        "Title": "Trade Type",
+        "Headers": "tradeTypes",
+        "Type": "multiselect",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "endpoint": "trade",
+        "key": "tradeTypes"
+      },
+      {
+        "Title": "Instruction By",
+        "Headers": "instructionBy",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+        "endpoint": "user",
+        "key": "name"
+      },
+      {
+        "Title": "Documentation of Evidence Photo",
+        "Headers": "documentaryEvidencePhoto",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+      {
+        "Title": "Inducted Signed By",
+        "Headers": "inductedSignBy",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+      {
+        "Title": "Inductees Signed By",
+        "Headers": "inducteeSignBy",
+        "Type": "editablechip",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+      {
+        "Title": "Geo Tagging",
+        "Headers": "geotagging",
+        "Type": "geolocation",
+        "_id": "66b230b6cc8539b4ed3861cc1"
+      },
+      {
+        "Title": "Comments Box",
+        "Headers": "commentsBox",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+      {
+        "Title": "Created At",
+        "Headers": "createdAt",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34cd83190d84d50262c71",
+    "Page": "specific",
+    "PageFields": [
+      {
+        "Title": "Project Name",
+        "Headers": "projectName",
+        "Type": "dropdown",
+        "endpoint": "projects",
+        "key": "projectName",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Date",
+        "Headers": "date",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Time",
+        "Headers": "time",
+        "Type": "timepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Topic Name",
+        "Headers": "topicName",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Type of Topic",
+        "Headers": "typeOfTopic",
+        "Type": "dropdown",
+        "endpoint": "topic",
+        "key": "topicTypes",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Attendees",
+        "Headers": "attendees",
+        "Type": "editablechip",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Inductees Name",
+        "Headers": "inducteesName",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Trade Type",
+        "Headers": "tradeTypes",
+        "Type": "multiselect",
+        "endpoint": "trade",
+        "key": "tradeTypes",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Instruction By",
+        "Headers": "instructionBy",
+        "Type": "dropdown",
+        "endpoint": "user",
+        "key": "name",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Documentation of Evidence Photo",
+        "Headers": "documentaryEvidencePhoto",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+      {
+        "Title": "Trainee Signed By",
+        "Headers": "traineeSignBy",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+      {
+        "Title": "Traning Signed By",
+        "Headers": "trainingSignBy",
+        "Type": "editablechip",
+        "_id": "66b230b6cc8539b4ed3861ccb"
+      },
+
+      {
+        "Title": "Comments Box",
+        "Headers": "commentsBox",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+
+      {
+        "Title": "Geo Tagging",
+        "Headers": "geotagging",
+        "Type": "geolocation",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34cd83190d84d50262c71",
+    "Page": "uauc",
+    "PageFields": [
+      {
+        "Title": "Project Name",
+        "Headers": "projectName",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+        "endpoint": "projects",
+        "key": "projectName"
+      },
+      {
+        "Title": "Area",
+        "Headers": "area",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc2"
+      },
+
+      {
+        "Title": "Date",
+        "Headers": "date",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4"
+      },
+      {
+        "Title": "Time",
+        "Headers": "time",
+        "Type": "timepicker",
+        "_id": "66b230b6cc8539b4ed3861cc5"
+      },
+      {
+        "Title": "Observer",
+        "Headers": "observer",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861ccc",
+        "endpoint": "user",
+        "key": "name"
+      },
+      {
+        "Title": "Observation",
+        "Headers": "observation",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+      {
+        "Title": "Photo",
+        "Headers": "photo",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+      {
+        "Title": "Type of Hazard",
+        "Headers": "hazards",
+        "Type": "multiselect",
+        "_id": "66b230b6cc8539b4ed3861cc8",
+        "endpoint": "hazards",
+        "key": "hazards"
+      },
+      {
+        "Title": "Causes",
+        "Headers": "causes",
+        "Type": "editablechip",
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+      {
+        "Title": "Risk Value",
+        "Headers": "riskValue",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cca",
+        "endpoint": "RiskRating",
+        "key": "severity"
+      },
+      {
+        "Title": "Assigned To",
+        "Headers": "assignedTo",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861ccc",
+        "endpoint": "user",
+        "key": "name"
+      },
+      {
+        "Title": "Corrective Preventive Actions",
+        "Headers": "correctivePreventiveAction",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+      {
+        "Title": "Action Taken By",
+        "Headers": "actionTakenBy",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861ccc",
+        "endpoint": "user",
+        "key": "name"
+      },
+
+      {
+        "Title": "Status",
+        "Headers": "status",
+        "Type": "radio",
+        "Options": ["Open", "Closed"],
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      },
+
+      {
+        "Title": "Geo Tagging",
+        "Headers": "geotagging",
+        "Type": "geolocation",
+        "_id": "66b230b6cc8539b4ed3861cc1"
+      },
+      {
+        "Title": "Comment",
+        "Headers": "comment",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc7"
+      }
+    ],
+    "__v": 0
+  }
+]

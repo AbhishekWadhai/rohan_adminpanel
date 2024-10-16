@@ -1,31 +1,40 @@
 import 'package:flutter/material.dart';
 
-var defaultBackgroundColor = Colors.grey[300];
-var appBarColor = Colors.grey[900];
+var defaultBackgroundColor = Colors.white;
+var appBarColor = Colors.white70;
 var myAppBar = AppBar(
   backgroundColor: appBarColor,
-  title: Text(' '),
+  title: Row(
+    children: [
+      SizedBox( height: 40, width: 40, child: Image.asset("assets/rohan_logo.png")),
+      const SizedBox(width: 50,),
+      const Text(
+        'ROHAN ATMARAKSHA',
+        style: TextStyle(fontWeight: FontWeight.bold, letterSpacing: 10),
+      ),
+    ],
+  ),
   centerTitle: false,
 );
-var drawerTextColor = TextStyle(
-  color: Colors.grey[600],
+var drawerTextColor = const TextStyle(
+  color: Colors.white,
 );
 var tilePadding = const EdgeInsets.only(left: 8.0, right: 8, top: 8);
 var myDrawer = Drawer(
-  backgroundColor: Colors.grey[300],
+  backgroundColor: Colors.blue[300],
   elevation: 0,
   child: Column(
     children: [
-      DrawerHeader(
+      const DrawerHeader(
         child: Icon(
-          Icons.favorite,
+          Icons.person,
           size: 64,
         ),
       ),
       Padding(
         padding: tilePadding,
         child: ListTile(
-          leading: Icon(Icons.home),
+          leading: const Icon(Icons.home),
           title: Text(
             'D A S H B O A R D',
             style: drawerTextColor,

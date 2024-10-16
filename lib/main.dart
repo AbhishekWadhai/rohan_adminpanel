@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsivedashboard/responsive/desktop_body.dart';
-import 'package:responsivedashboard/responsive/tablet_body.dart';
-import 'responsive/mobile_body.dart';
-import 'responsive/responsive_layout.dart';
+import 'package:get/get.dart';
+import 'package:responsivedashboard/routes/routes.dart';
+import 'package:responsivedashboard/routes/routes_string.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,14 +12,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.green),
-      home: ResponsiveLayout(
-        mobileBody: const MobileScaffold(),
-        tabletBody: const TabletScaffold(),
-        desktopBody: const DesktopScaffold(),
-      ),
+      getPages: AppRoutes.routes,
+      initialRoute: Routes.loginPage,
     );
   }
 }

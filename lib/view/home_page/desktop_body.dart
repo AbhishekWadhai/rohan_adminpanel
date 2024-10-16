@@ -1,7 +1,10 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import '../constants.dart';
-import '../util/my_box.dart';
-import '../util/my_tile.dart';
+import 'package:responsivedashboard/utils/utilities.dart';
+
+import '../../constants.dart';
+
+
 
 class DesktopScaffold extends StatefulWidget {
   const DesktopScaffold({Key? key}) : super(key: key);
@@ -31,16 +34,17 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                 children: [
                   // first 4 boxes in grid
                   AspectRatio(
-                    aspectRatio: 4,
+                    aspectRatio: 3,
                     child: SizedBox(
                       width: double.infinity,
                       child: GridView.builder(
-                        itemCount: 4,
+                        // scrollDirection: ,
+                        itemCount: Utilities.boxes.length,
                         gridDelegate:
                             const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 4),
+                                crossAxisCount: 6),
                         itemBuilder: (context, index) {
-                          return MyBox();
+                          return Utilities.boxes[index];
                         },
                       ),
                     ),
@@ -49,9 +53,9 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                   // list of previous days
                   Expanded(
                     child: ListView.builder(
-                      itemCount: 7,
+                      itemCount: Utilities.myTiles.length,
                       itemBuilder: (context, index) {
-                        return const MyTile();
+                        return Utilities.myTiles[index];
                       },
                     ),
                   ),
@@ -68,7 +72,21 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                       height: 400,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: Colors.grey[400],
+                        color: Colors.blue[100],
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: PieChart(
+                            PieChartData(centerSpaceRadius: 0, sections: [
+                          PieChartSectionData(
+                              radius: 150, value: 20, color: Colors.blue),
+                          PieChartSectionData(
+                              radius: 150, value: 40, color: Colors.red),
+                          PieChartSectionData(
+                              radius: 150, value: 60, color: Colors.yellow),
+                          PieChartSectionData(
+                              radius: 150, value: 80, color: Colors.green)
+                        ])),
                       ),
                     ),
                   ),
@@ -79,7 +97,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Colors.grey[200],
+                          color: Colors.blue[200],
                         ),
                       ),
                     ),

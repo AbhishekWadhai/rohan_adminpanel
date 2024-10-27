@@ -256,7 +256,7 @@
         "Headers": "permissions",
         "Type": "simplemultiselect",
         "_id": "66b34b204ecde7c5bfeab153",
-        "Options": ["Read", "Write", "Delete", "Moderate", "Manage", "Inspect","uauc","workpermit"]
+        "Options": ["Read", "Write", "Delete", "Moderate", "Manage", "Inspect","UAUC Prevention Action","Workpermit Creation","UAUC Creation","Safety Creation"]
       }
     ],
     "__v": 0
